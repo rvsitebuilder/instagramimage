@@ -1,0 +1,42 @@
+{
+    "name": "rvsitebuilder/instagramimage",
+    "type": "rvsitebuilder-app",
+    "description": "An app to insert your own images directly from your Instagram account.",
+    "license": "see license in LICENSE",
+    "keywords": [
+        "laravel",
+        "instagramimage",
+        "instagram"
+    ],
+    "authors": [
+        {
+            "name": "RVGlobalSoft",
+            "email": "support@rvglobalsoft.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Rvsitebuilder\\InstagramImage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "extra": {
+        "component": "package",
+        "laravel": {
+            "providers": [
+                "Rvsitebuilder\\InstagramImage\\InstagramImageServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": false,
+        "classmap-authoritative": false,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
