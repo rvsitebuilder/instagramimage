@@ -12,7 +12,7 @@ header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Dispo
   </head>
   <body>
     <div id="albums" style="float: left; width: 137px; height:400px; overflow-x: hidden; overflow-y: auto;"></div>
-  	<div id="photos" style="float: right; width: 100%;" class="photos"></div>
+      <div id="photos" style="float: right; width: 100%;" class="photos"></div>
   </body>
   <script>
 window.onmessage = function(event) {
@@ -61,9 +61,9 @@ window.onmessage = function(event) {
     async function igPhoto(){
         var igData = await getIGdata();
         $.each(igData.data,function(k,v){
-      			postIG = '{"action":"igPhoto","id":"'+v.id+'","picture":"'+v.images.thumbnail.url+'","source":"'+v.images.standard_resolution.url+'"}';
-      			parent.postMessage(postIG,'*')
-      	});
+                  postIG = '{"action":"igPhoto","id":"'+v.id+'","picture":"'+v.images.thumbnail.url+'","source":"'+v.images.standard_resolution.url+'"}';
+                  parent.postMessage(postIG,'*')
+          });
 
     }
 
