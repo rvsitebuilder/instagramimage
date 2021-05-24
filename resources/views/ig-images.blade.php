@@ -14,7 +14,7 @@ header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Dispo
     <div id="albums" style="float: left; width: 137px; height:400px; overflow-x: hidden; overflow-y: auto;"></div>
       <div id="photos" style="float: right; width: 100%;" class="photos"></div>
   </body>
-  <script>
+  <script nonce="{{ csrf_token() }}">
 window.onmessage = function(event) {
     switch(event.data) {
       case 'igphoto':
