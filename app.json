@@ -1,15 +1,13 @@
 {
     "name": "rvsitebuilder/instagramimage",
     "alias": "Instagramimage",
-    "description": "",
-    "keywords": [],
+    "description": "An app to insert your own images directly from your Instagram account.",
+    "keywords": ["laravel", "instagramimage", "instagram"],
     "app-launcher": 0,
     "app-launcher-route": "",
     "icon": "/vendor/rvsitebuilder/instagramimage/images/icon-app_instagramimage.png",
     "require": {
-        "rvsitebuilder/wysiwyg": "^0.1.0"    
+        "rvsitebuilder/wysiwyg": "^0.1.0"
     },
-    "require-dev" : {
-    }
-    
+    "require-dev": {}
 }
