@@ -35,12 +35,12 @@ class InstagramImageServiceProvider extends ServiceProvider
         //TODO use cach route
         //$this->loadRoutesFrom( __DIR__.'/../routes', 'core');
 
-        include_route_files(__DIR__.'/../routes');
+        include_route_files(__DIR__ . '/../routes');
     }
 
     public function bootView(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'rvsitebuilder/instagramimage');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'rvsitebuilder/instagramimage');
     }
 
     /**
@@ -48,7 +48,9 @@ class InstagramImageServiceProvider extends ServiceProvider
      */
     public function defineVendorPublish(): void
     {
-        $this->publishes([__DIR__.'/../public' => public_path('vendor/rvsitebuilder/instagramimage')], 'public');
+        $this->publishes([
+            __DIR__ . '/../public' => public_path('vendor/rvsitebuilder/instagramimage'),
+        ], 'public');
     }
 
     /**
